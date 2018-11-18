@@ -1,6 +1,6 @@
 {
   "name": "@allex/md5",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MD5 implements with pure js. supports string, Buffer, ArrayBuffer, Uint8Array",
   "jsnext:main": "lib/md5.esm.js",
   "module": "lib/md5.esm.js",
