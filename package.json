@@ -22,7 +22,9 @@
     "build": "npm run lint && rollup-worker -c",
     "prepare": "npm run build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@allex/crypto-util": "~1"
+  },
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/plugin-proposal-object-rest-spread": "latest",
@@ -33,7 +35,7 @@
     "@hitv/plugin-proposal-decorators": "latest",
     "@hitv/plugin-transform-aliases": "latest",
     "@hitv/plugin-transform-classes": "latest",
-    "babel-core": "^6.26.3",
+    "babel-core": "bridge",
     "babel-eslint": "^8.2.2",
     "babel-jest": "^23.6.0",
     "eslint": "^4.18.1",

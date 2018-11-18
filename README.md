@@ -21,3 +21,7 @@ describe('use pure js md5-js to test', () => {
   });
 });
 ```
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
