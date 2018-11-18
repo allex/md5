@@ -17,6 +17,8 @@
 
 const HEX_CHARS = '0123456789abcdef'.split('');
 
+const byteLength = s => (s.byteLength ? s.byteLength : s.length);
+
 /*
  * Add integers, wrapping at 2^32. This uses 16-bit operations internally
  * to work around bugs in some JS interpreters.
@@ -189,7 +191,7 @@ function rstr2binl(input) {
  * Calculate the MD5 of a raw string
  */
 function rstrMD5(s) {
-  return binl2rstr(binlMD5(rstr2binl(s), s.length * 8));
+  return binl2rstr(binlMD5(rstr2binl(s), byteLength(s) * 8));
 }
 
 /*
