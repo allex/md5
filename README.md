@@ -1,6 +1,6 @@
 # @allex/md5
 
-Sha1 implements with pure js. supports string, Buffer, ArrayBuffer, Uint8Array
+MD5 implements with pure js. supports string, Buffer, ArrayBuffer, Uint8Array
 
 ## Usage
 

@@ -1,6 +1,6 @@
 {
   "name": "@allex/md5",
-  "version": "1.0.3",
+  "version": "1.0.1",
   "description": "MD5 implements with pure js. supports string, Buffer, ArrayBuffer, Uint8Array",
   "jsnext:main": "lib/md5.esm.js",
   "module": "lib/md5.esm.js",
@@ -10,10 +10,7 @@
   "types": "md5.d.ts",
   "author": "allex <allex.wxn@gmail.com> (http://iallex.com/)",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/allex/md5-js.git"
-  },
+  "repository": "allex/md5",
   "keywords": [
     "md5"
   ],

@@ -157,10 +157,9 @@ function binlMD5(x, len) {
  * Convert an array of little-endian words to a string
  */
 function binl2rstr(input) {
-  let i;
-  let output = '';
   const length32 = input.length * 32;
-  for (i = 0; i < length32; i += 8) {
+  let output = '';
+  for (let i = 0; i < length32; i += 8) {
     output += String.fromCharCode((input[i >> 5] >>> (i % 32)) & 0xff);
   }
   return output;

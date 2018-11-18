@@ -20,4 +20,11 @@ describe('use pure js md5-js to test', () => {
     expect(md5('allex')).toBe('f5a85798dd7dbaba428299b13f3d2204');
     expect(md5(arrayBuffer)).toBe('f13e8870391a1b1a5f12c3ac8c256583');
   });
+
+  test('md5() with key, and output raw', () => {
+    expect(md5('allex', 'hi')).toBe('4e1a34c67c87f8af625bf98e1da16a7a');
+    expect(md5('allex', 'hi', true)).toBe('N4Æ|ø¯b[ù¡jz');
+    expect(md5('allex', '0123456789ABCDEFG', true)).toBe('äß¥:Üb%ï/y±');
+    expect(md5('allex', '', true)).toBe('õ¨WÝ}ººB±?="');
+  });
 });
